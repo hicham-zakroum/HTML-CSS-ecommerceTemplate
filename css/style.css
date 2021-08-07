@@ -121,6 +121,7 @@ i {
  .featured-products .col-4,
  .latest-products .col-8 {
      transition: transform 0.4s;
+     cursor: pointer;
  }
  .featured-products .col-4:hover,
  .latest-products .col-8:hover {
@@ -316,9 +317,18 @@ i {
 }
 /* end of container style */
 /* media / responsive */
-@media (max-width: 550px) {
-    .row {
-        grid-template-columns: repeat(auto-fill, minmax(250px,400px));
+@media (max-width: 475px) {
+    .header .row,
+    .offer .row,
+    .categories .row,
+    .featured-products .row,
+    .latest-products .row,
+    .testimonial .row,
+    footer .row {
+        grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    }
+    .brands {
+        text-align: center;
     }
 }
 @media (max-width: 1210px) {
