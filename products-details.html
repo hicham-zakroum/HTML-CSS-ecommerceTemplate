@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Products - ReadStore</title>
+    <title>Products Details -ReadStore</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- fonts -->
@@ -42,23 +42,55 @@
         </div>
     </div>
     <!-- end of navbar -->
-    <!-- start of products -->
-    <div class="all-products">
+    <!-- start of products details -->
+    <div class="products-details">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="image-product">
+                        <img src="img/gallery-1.jpg" alt="gallery-1">
+                    </div>
+                    <div class="images-product">
+                        <img src="img/gallery-1.jpg" alt="gallery-1">
+                        <img src="img/gallery-2.jpg" alt="gallery-2">
+                        <img src="img/gallery-3.jpg" alt="gallery-3">
+                        <img src="img/gallery-4.jpg" alt="gallery-4">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <h4>Home /T-Shirt</h4>
+                    <h2>Red Printed T-Shirt by HRX</h2>
+                    <p>$50.00</p>
+                    <select name="size" id="">
+                        <option value="select size">select size</option>
+                        <option value="xl">xl</option>
+                        <option value="xxl">xxl</option>
+                        <option value="small">small</option>
+                        <option value="meduim">meduim</option>
+                        <option value="large">large</option>
+                    </select>
+                    <div class="add-to-cart">
+                        <input type="number" name="number" id="" value="1">
+                        <a href="shopping-cart.html" class="btn">Add To Cart</a>
+                    </div>
+                    <h3>Products Details</h3>
+                    <p>Give your summer wardrobe a style upgrade with the HRX Men's Active T-Shirt.
+                         Team it with a pair of shorts for your moming workout or a chemis for an evening out with the guys.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of products details -->
+    <!-- start of related products -->
+    <div class="related-products">
         <div class="small-container">
             <div class="products">
                 <div class="row-2">
-                    <h2>All Products</h2>
-                    <div class="sorting">
-                        <select name="Sorting" id="">
-                            <option value="Default Sorting">Default Sorting</option>
-                            <option value="Sort by price">Sort by price</option>
-                            <option value="Sort by popularity">Sort by popularity</option>
-                            <option value="Sort by sale">Sort by sale</option>
-                        </select>
-                    </div>
+                    <h2>related Products</h2>
+                    <p>View More</p>
                 </div>
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-4">
                         <img src="img/product-1.jpg" alt="product-1">
                         <h4>Red Printed T-Shirt</h4>
                         <div class="rating">
@@ -70,7 +102,7 @@
                         </div>
                         <p>$50.00</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-4">
                         <img src="img/product-2.jpg" alt="product-2">
                         <h4>HRX Sport Shoes</h4>
                         <div class="rating">
@@ -82,7 +114,7 @@
                         </div>
                         <p>$75.00</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-4">
                         <img src="img/product-3.jpg" alt="product-3">
                         <h4>HRX Gray Trackpants</h4>
                         <div class="rating">
@@ -94,7 +126,7 @@
                         </div>
                         <p>$45.00</p>
                     </div>
-                    <div class="col-12">
+                    <div class="col-4">
                         <img src="img/product-4.jpg" alt="product-4">
                         <h4>Blue Printed T-Shirt</h4>
                         <div class="rating">
@@ -106,114 +138,11 @@
                         </div>
                         <p>$55.00</p>
                     </div>
-                    <div class="col-12">
-                        <img src="img/product-9.jpg" alt="product-9">
-                        <h4>Black Sport Watch</h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$135.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-10.jpg" alt="product-10">
-                        <h4>Black HRX Shoes</h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p>$50.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-11.jpg" alt="product-11">
-                        <h4>Gray NIKE Shoes</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$55.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-12.jpg" alt="product-12">
-                        <h4>HRX Black Trackpants</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$75.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-5.jpg" alt="product-5">
-                        <h4>Black Sports Watch</h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$135.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-6.jpg" alt="product-6">
-                        <h4>Black Printed T-Shirt </h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <p>$55.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-7.jpg" alt="product-7">
-                        <h4>HRX 3Socks</h4>
-                        <div class="rating">
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$30.00</p>
-                    </div>
-                    <div class="col-12">
-                        <img src="img/product-8.jpg" alt="product-8">
-                        <h4>Black Watch</h4>
-                        <div class="rating">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fa fa-star-o"></i>
-                        </div>
-                        <p>$120.00</p>
-                    </div>
-                </div>
-                <div class="other-products">
-                    <span>1</span>
-                    <span>2</span>
-                    <span>3</span>
-                    <span>4</span>
-                    <span>&#8594;</span>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end ofproducts  -->
+    <!-- end of related products  -->
     <!-- start of footer  --> 
     <footer>
         <div class="container">

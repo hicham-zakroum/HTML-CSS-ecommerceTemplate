@@ -115,19 +115,24 @@ i {
  .latest-products ,
  .testimonial ,
  .brands,
- .all-products {
+ .all-products,
+ .products-details,
+ .related-products {
      padding-top: var(--section-padding);
      padding-bottom: var(--section-padding);
  }
  .featured-products .col-4,
  .latest-products .col-8,
- .all-products .col-12 {
+ .all-products .col-12,
+ .related-products .col-4,
+ .products-details img {
      transition: transform 0.4s;
      cursor: pointer;
  }
  .featured-products .col-4:hover,
  .latest-products .col-8:hover,
- .all-products .col-12:hover {
+ .all-products .col-12:hover,
+ .related-products .col-4:hover {
      transform: translateY(10px);
  }
  .featured-products h2 ,
@@ -153,7 +158,8 @@ i {
  }
  .featured-products .row,
  .latest-products .row,
- .all-products .row {
+ .all-products .row,
+ .related-products .row {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px,1fr));
     grid-gap: 20px;
@@ -161,7 +167,8 @@ i {
  }
  .featured-products .row img,
  .latest-products .row img,
- .all-products .row img {
+ .all-products .row img,
+ .related-products .row img {
      max-width: 100%;
  }
  /* end of featured and latest products */
@@ -279,7 +286,9 @@ i {
  }
  /* end of footer section */
  /* ******************************************** style of products page ********************************* */
- .all-products h2 {
+ .all-products h2,
+ .products-details h2,
+ .related-products h2 {
     font-weight: bold;
     font-size: 1.8em;
     text-align: start;
@@ -297,10 +306,16 @@ i {
 }
 .all-products select {
     border: 1px solid var(--main-color);
+}
+.all-products select,
+.products-details .row .col-2 select,
+.products-details .row input {
     padding: 5px;
     right: 0;
 }
-.all-products select:focus {
+.all-products select:focus,
+.products-details .row .col-2 select:focus,
+.products-details .row input {
     outline: none;
 }
 .all-products .products {
@@ -325,6 +340,42 @@ i {
     background-color: var(--main-color);
     color: #fff;
 }
+/* ********************************** end of products page *****************************  */ 
+/* *********************************** style of products details ***************************** */ 
+.products-details .row .image-product img {
+    max-width: 100%;
+}
+.products-details .images-product,
+.products-details .image-product {
+    text-align: center;
+}
+.products-details .row .col-2 h4 {
+    color: var(--secondry-color);
+}
+.products-details .row .col-2 h2:first-of-type {
+    color: #111;
+    font-weight: bold;
+    font-size: 2em;
+}
+.products-details .row .col-2 p:first-of-type  {
+    font-weight: bold;
+}
+.products-details .row .col-2 input {
+    width: 40px;
+    text-align: center;
+    margin-right: 20px;
+}
+.products-details .image-product:hover img {
+    transform: translateY(-10px);
+}
+.products-details .images-product img:hover {
+    transform: translateY(5px);
+}
+.products-details .row .images-product img {
+    padding-top: 4px;
+    max-width: 24.19%;
+}
+/* ************************************* end of products details  *********************************** */
 @media (max-width:390px) {
     .all-products .other-products span {
         padding: 4px 8px;
@@ -360,7 +411,7 @@ i {
     }
     .all-products .row-2 {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
         grid-gap: 20px;
     }
 }
@@ -387,6 +438,22 @@ i {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
         grid-gap: 20px;
+    }
+    .related-products .row-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+        grid-gap: 40px;
+    }
+    .related-products .row-2 p {
+        justify-self: end;
+        padding-right: 10px;
+        cursor: pointer;
+    }
+    .products-details .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+        grid-gap: 40px;
+        padding-top: 40px;
     }
 }
 
@@ -423,6 +490,12 @@ i {
     .all-products {
         text-align: center;
     }
+    .all-products h2 {
+        text-align: center;
+    }
+    .all-products select {
+        display: none;
+    }
 }
 @media (max-width: 1210px) {
     footer .col-4 .download {
@@ -456,6 +529,15 @@ i {
     }
     .navbar ul li a:hover {
         color: var(--main-color);
+    }
+    .products-details .row .col-2 {
+        padding-top: 40px;
+    }
+    .related-products .row-2 {
+        text-align: center;
+    }
+    .related-products .row-2 p {
+        display: none;
     }
     .small-container {
         max-width: 750px;
