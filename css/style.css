@@ -423,6 +423,12 @@ i {
     .all-products {
         text-align: center;
     }
+    .all-products h2 {
+        text-align: center;
+    }
+    .all-products select {
+        display: none;
+    }
 }
 @media (max-width: 1210px) {
     footer .col-4 .download {
