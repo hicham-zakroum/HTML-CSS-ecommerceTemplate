@@ -309,13 +309,15 @@ i {
 }
 .all-products select,
 .products-details .row .col-2 select,
-.products-details .row input {
+.products-details .row input,
+.cart input {
     padding: 5px;
     right: 0;
 }
 .all-products select:focus,
 .products-details .row .col-2 select:focus,
-.products-details .row input {
+.products-details .row input,
+.cart input {
     outline: none;
 }
 .all-products .products {
@@ -357,10 +359,12 @@ i {
     font-weight: bold;
     font-size: 2em;
 }
-.products-details .row .col-2 p:first-of-type  {
+.products-details .row .col-2 p:first-of-type,
+.cart p  {
     font-weight: bold;
 }
-.products-details .row .col-2 input {
+.products-details .row .col-2 input,
+.cart input {
     width: 40px;
     text-align: center;
     margin-right: 20px;
@@ -376,6 +380,72 @@ i {
     max-width: 24.19%;
 }
 /* ************************************* end of products details  *********************************** */
+/* ************************************ start of cart shopping style ******************************* */ 
+.cart {
+    padding-top: var(--section-padding);
+    padding-bottom: 10px;
+}
+.subtotal {
+    padding-bottom: var(--section-padding);
+}
+table {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.cart table th {
+    background-color: var(--main-color);
+    color: rgb(247, 247, 247);
+    text-align: start;
+    padding: 4px 15px;
+}
+td {
+    padding: 10px 5px;
+}
+td img {
+    width: 80px;
+    height: 80px;
+}
+.cart .product {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cart .product .description {
+    padding-left: 10px;
+}
+.cart small {
+    color: var(--secondry-color);
+    padding-top: 5px;
+}
+.cart p {
+    margin: 0;
+    margin-top: 10px;
+    line-height: normal;
+}
+.cart span {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 0.9em;
+    padding-top: 10px;
+    display: block;
+}
+.subtotal .small-container {
+    display: flex; 
+    justify-content: flex-end;
+}
+.subtotal table {
+    width: 100%;
+    border-top: 3px solid var(--main-color);
+    padding-top: 8px;
+    max-width: 400px;
+}
+td:last-child {
+    text-align: right;
+}
+th:last-child {
+    text-align: right;
+}
+/*  ************************************* end of cart shopping  ********************************** */
 @media (max-width:390px) {
     .all-products .other-products span {
         padding: 4px 8px;
@@ -423,6 +493,12 @@ i {
     }
     .all-products .sorting {
         justify-self: center;
+    }
+    .cart .product p {
+        display: none;
+    }
+    .cart tr td:nth-child(2) {
+        text-align: center;
     }
 }
 /* meduim */
