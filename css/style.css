@@ -531,15 +531,60 @@ form a {
     margin-bottom: 400px;
 }
 .about,
-.contact {
+.text-contact {
     font-size: 2em;
     font-weight: bold;
     text-align: center;
     color: var(--main-color);
 }
 .about h2,
-.contact h2 {
-    border: 2px solid #000;
+.text-contact h2 {
+    border: 2px solid rgb(134, 133, 133);
+}
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.contact .small-container .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+    grid-gap: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2%;
+}
+.contact .left img {
+    max-width: 100%;
+}
+.contact .right h2 {
+    text-align: center;
+}
+.contact .left {
+    background-color: #f1f1f1;
+}
+.contact hr {
+    width: 80px;
+    height: 4px;
+    background-color: var(--main-color);
+    border: none;
+    margin-bottom: 30px;
+}
+.contact input,
+.contact textarea {
+    margin: 10px 0;
+    padding: 0 10px;
+    width: 97%;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+.contact textarea {
+    height: 110px;
+    padding-top: 5px;
+}
+.contact .right .btn {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    width: 97%;
+    text-align: center;
 }
 /* ************************************************************************************************ */
 @media (max-width:390px) {
@@ -627,6 +672,9 @@ form a {
         grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
         grid-gap: 40px;
         padding-top: 40px;
+    }
+    .contact .small-container .contact-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
     }
 }
 
