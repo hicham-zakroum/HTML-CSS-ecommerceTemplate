@@ -444,16 +444,21 @@ td img {
     justify-content: flex-end;
 }
 .subtotal table {
-    width: 100%;
     border-top: 3px solid var(--main-color);
     padding-top: 8px;
-    max-width: 400px;
 }
 td:last-child {
     text-align: right;
 }
 .cart table th:last-of-type {
     text-align: right;
+}
+.subtotal-check {
+    width: 100%;
+    max-width: 400px;
+}
+.checkout {
+    text-align: end;
 }
 /*  ************************************* end of cart shopping  ********************************** */
 /* ************************************** start of account style ********************************* */
@@ -505,6 +510,7 @@ form .btn:focus {
 }
 #LoginForm {
     left: -300px;
+    max-width: 100%;
 }
 form a {
     font-size: 12px;
@@ -520,6 +526,22 @@ form a {
     transition: transform 1s;
 }
 /* ************************************** end of account style ************************************ */
+/* **************************************** about us and contact us style ******************************************* */
+.about-us {
+    margin-bottom: 400px;
+}
+.about,
+.contact {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-color);
+}
+.about h2,
+.contact h2 {
+    border: 2px solid #000;
+}
+/* ************************************************************************************************ */
 @media (max-width:390px) {
     .all-products .other-products span {
         padding: 4px 8px;
